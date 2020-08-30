@@ -48,7 +48,7 @@ public class ClientActivity extends AppCompatActivity {
                     book.setName("编码");
                     bookManager.addBook(book);
 
-                    Log.d("ClientActivity", bookManager.getBooks().toString());
+                    Log.d("binder", "ClientActivity add " + bookManager.getBooks().toString());
                 } catch (RemoteException e) {
                     e.printStackTrace();
                 }
@@ -58,7 +58,6 @@ public class ClientActivity extends AppCompatActivity {
     }
 
     private void attemptToBindService() {
-
         Intent intent = new Intent(this, RemoteService.class);
         intent.setAction("com.baronzhang.ipc.server");
         bindService(intent, serviceConnection, Context.BIND_AUTO_CREATE);

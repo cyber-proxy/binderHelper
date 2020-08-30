@@ -40,6 +40,7 @@ public class RemoteService extends Service {
                 if (books != null) {
                     return books;
                 }
+                Log.d("binder", "serve get   books: " + books.toString());
                 return new ArrayList<>();
             }
         }
@@ -57,7 +58,7 @@ public class RemoteService extends Service {
                 book.setPrice(book.getPrice() * 2);
                 books.add(book);
 
-                Log.e("Server", "books: " + book.toString());
+                Log.d("binder", "serve add  books: " + book.toString());
             }
         }
     };

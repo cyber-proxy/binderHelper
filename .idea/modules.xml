@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HelloBinder.iml" filepath="$PROJECT_DIR$/HelloBinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/HelloBinder-app.iml" filepath="$PROJECT_DIR$/app/HelloBinder-app.iml" group="HelloBinder/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugin-HelloBinder.iml" filepath="$PROJECT_DIR$/plugin-HelloBinder.iml" group="HelloBinder" />
     </modules>
   </component>
 </project>
